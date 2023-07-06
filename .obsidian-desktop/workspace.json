@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Setup Stuff/proxmox/Arch CT.md",
+                "file": "Computer Setup Stuff/proxmox/Homelab.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Setup Stuff/proxmox/Arch CT.md",
+                "file": "Computer Setup Stuff/proxmox/Homelab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Setup Stuff/proxmox/Arch CT.md",
+                "file": "Computer Setup Stuff/proxmox/Homelab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Setup Stuff/proxmox/Arch CT.md"
+                "file": "Computer Setup Stuff/proxmox/Homelab.md"
               }
             }
           }
@@ -195,6 +195,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -205,9 +206,9 @@
   },
   "active": "6e54001835250936",
   "lastOpenFiles": [
+    "Computer Setup Stuff/proxmox/Arch CT.md",
     "Computer Setup Stuff/NFS/Connecting to Share.md",
     "Computer Setup Stuff/Lighting/RGB.md",
-    "Computer Setup Stuff/proxmox/Arch CT.md",
     "Media/Desired Media.md",
     "Plex/Webhooks.md",
     "Plex",
