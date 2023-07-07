@@ -171,7 +171,7 @@ sudo vi /etc/fstab
 
 we want to add a line:
 ```bash
-//[your ip address]/[share name]/ /mnt/[mount name] cifs credentials=/home/[current logged-in user]/.smbcredentials 0 0 # for me it's dennis
+//[your ip address]/[share name]/ /mnt/[mount name] cifs credentials=/home/[current logged-in user]/.smbcredentials 0 0
 ```
 
 For me it is:
