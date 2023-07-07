@@ -141,31 +141,42 @@ b943b408575b   portainer/portainer-ce:latest   "/portainer"   5 seconds ago   Up
 
 now navigate in your browser to `https://[your-server-ip]:9443` and continue the setup process there.
 
-## Hook up an NFS share at boot (if desired)
+## Hook up an CIFS share at boot (if desired)
 
 ```bash
-sudo pacman -S nfs-utils
+sudo pacman -Sy noconfirm cifs-utils
 ```
 
+create a `.smbcredentials` file and add these lines using nano:
+```
+username=samba user in truenas
+password=password for samba user in truenas
+```
+then hit `ctrl + o` then `ctrl + x`  that will write the file and exit.
+
+then we need to change the credentials file permissions
+```bash
+chmod 600 .smbcredentials
+```
 
 create mount point:
 ```bash
 sudo mkdir -p /mnt/[desired-directory]
 ```
 
-now lets add your NFS share to fstab to be mounted on boot
+now lets add your CIFS share to fstab to be mounted on boot
 ```bash
 sudo vi /etc/fstab
 ```
 
 we want to add a line:
 ```bash
-[ip-addres]:[share-location] /mnt/[mount-directory] nfs defaults 0 0
+//[your ip address]/[share name]/ /mnt/[mount name] cifs credentials=/home/[current logged-in user]/.smbcredentials 0 0 # for me it's dennis
 ```
 
 For me it is:
 ```bash
-192.168.1.33:/mnt/LargePool/Media-1 /mnt/media nfs defaults 0 0
+//192.168.1.33/media-share-large/ /mnt/media cifs credentials=/home/dennis/.smbcredentials 0 0
 ```
 
 We are going to check the config is correct with:
