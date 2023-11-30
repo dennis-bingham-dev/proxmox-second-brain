@@ -66,6 +66,16 @@
             }
           },
           {
+            "id": "22c1d78c802a11b6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
+          },
+          {
             "id": "4ffb587ab5698214",
             "type": "leaf",
             "state": {
@@ -78,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -214,7 +224,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "181ec70dd19196e0",
+  "active": "22c1d78c802a11b6",
   "lastOpenFiles": [
     "Computer Setup Stuff/proxmox/Homelab.md",
     "Computer Setup Stuff/proxmox/Arch CT.md",
